@@ -41,6 +41,7 @@
 </head>
 <body>
   <script>
+
     window.addEventListener('load', function(ev) {
       // Download main.dart.js
       _flutter.loader.loadEntrypoint({
@@ -54,6 +55,25 @@
         }
       });
     });
+  </script>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyDMO1pFGLJuTkbEp6ozXdnE_k7IIeUPQMA",
+      authDomain: "my-portfolio-c0863.firebaseapp.com",
+      projectId: "my-portfolio-c0863",
+      storageBucket: "my-portfolio-c0863.appspot.com",
+      messagingSenderId: "481894535035",
+      appId: "1:481894535035:web:fce807f689038eaa0f37de"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
   </script>
 </body>
 </html>

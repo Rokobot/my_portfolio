@@ -1,10 +1,18 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/src/feature/presentation/widgets/home_page_screen.dart';
+import 'package:my_portfolio/firebase_options.dart';
+import 'package:my_portfolio/src/feature/presentation/screens/connect_me_screen.dart';
+import 'package:my_portfolio/src/feature/presentation/screens/home_page_screen.dart';
 import 'package:my_portfolio/src/feature/constants/themes.dart';
+import 'package:my_portfolio/src/feature/presentation/screens/projects_screen.dart';
 
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform
+  );
   runApp(MyApp());
 }
 
@@ -23,10 +31,10 @@ class MyApp extends StatefulWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(scaffoldBackgroundColor: CustomColor.scaffoldBackground),
+      theme: ThemeData(scaffoldBackgroundColor: CustomColor.scaffoldBackground, fontFamily: 'open_sans_regular'),
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: HomePage(),
+        body: ProjectsScreen(),
       ),
     );
   }

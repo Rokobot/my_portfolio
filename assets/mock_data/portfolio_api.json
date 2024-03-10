@@ -1,0 +1,24 @@
+{
+"tech_skills":[
+{
+"title":"Firebase",
+"description":"I used Firebase in Java and Kotlin before, now I use it in FLutter with CLI. I mostly work with Firebase firestore, creating collections for messaging and other issues."
+},
+{
+"title":"BLoC",
+"description":"When I first used BLoC I found it difficult, but now I can use it properly. BLoC has a very rich set of plugins, I can do whatever I want with it. For this, I just need to create the event, state and bloc file where they will be combined, depending on the situation."
+},
+{
+"title":"Cubit",
+"description":"Cubiti isn't my favorite, but it's fun to use. It is easier to use Cubit, because you do not create events like in BloC, you emit the state to the screen directly via methd."
+},
+{
+"title":"Hive",
+"description":"I use it to keep local data. It is a technology I use frequently. It works with NoSQL and provides easy information flow. I mostly use FlutterSecureStrage to hold tokens, while credentials are in Hive."
+},
+{
+"title":"Dart",
+"description":"Since I first started using Flutter, I have written functions and other basic things using Dart. Dart is a flexible language, I find its syntax more similar to JS - and currently I use it at a detailed level."
+}
+]
+}

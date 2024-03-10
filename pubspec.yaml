@@ -36,6 +36,8 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   flutter_svg: ^2.0.10+1
+  cloud_firestore: ^4.15.8
+  firebase_core: ^2.27.0
 
 dev_dependencies:
   flutter_test:
@@ -62,6 +64,11 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/
+    - assets/images/company_logos/
+    - assets/images/skill_logos/
+    - assets/images/connect_me/
+    - assets/images/porjects/
+    - assets/mock_data/portfolio_api.json
 
   #   - images/a_dot_ham.jpeg
 
@@ -76,10 +83,14 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-#  fonts:
-#    - family: open_sans_regular
-#      fonts:
-#        - asset: assets/fonts/open_sans_regular.ttf
+  fonts:
+    - family: open_sans_regular
+      fonts:
+        - asset: assets/fonts/open_sans_regular.ttf
+
+    - family: flasty_regular
+      fonts:
+        - asset: assets/fonts/flasty_regular.ttf
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf
